@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGraphics", "ConsoleGraphics\ConsoleGraphics.csproj", "{520CCE20-B2D5-47DF-90F0-C36B60C04E15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGraphics", "src\ConsoleGraphics\ConsoleGraphics.csproj", "{520CCE20-B2D5-47DF-90F0-C36B60C04E15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGraphics.Physics", "ConsoleGraphics.Physics\ConsoleGraphics.Physics.csproj", "{FCE51FF0-B764-4F69-8442-5F51918BD0E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGraphics.Physics", "src\ConsoleGraphics.Physics\ConsoleGraphics.Physics.csproj", "{FCE51FF0-B764-4F69-8442-5F51918BD0E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
