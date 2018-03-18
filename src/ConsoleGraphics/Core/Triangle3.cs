@@ -26,7 +26,5 @@ namespace ConsoleGraphics.Core
         {
             return new Triangle2((Point2)tri.P1, (Point2)tri.P2, (Point2)tri.P3);
         }
-
-
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Render\IFrameBuffer.cs" />
     <Compile Include="Render\IPixelToAsciiConverter.cs" />
     <Compile Include="Render\IRasterizationHandler.cs" />
+    <Compile Include="Render\IRayGenerator.cs" />
     <Compile Include="Render\RasterizationHandler.cs" />
     <Compile Include="Render\ConsoleFrameDrawer.cs" />
     <Compile Include="Render\IFrameDrawer.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Display\Pixel.cs" />
     <Compile Include="Display\Screen.cs" />
     <Compile Include="Render\Ray.cs" />
+    <Compile Include="Render\RayIntersection.cs" />
     <Compile Include="Render\RayTracer.cs" />
     <Compile Include="ViewConverter\CameraToViewBoxCoordinateConverter.cs" />
     <Compile Include="ViewConverter\ICameraToViewBoxCoordinateConverter.cs" />

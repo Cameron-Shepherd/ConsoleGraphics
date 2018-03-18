@@ -17,10 +17,18 @@ namespace ConsoleGraphics.Core
         {
             m = new Matrix( new[]{x,y,z,w} );
         }
+
+        #region BasicOps
         public override Vector Add(Vector b)
         {
             var vector = CheckType(b);
             return new Vector4D(X + vector.X, Y + vector.Y, Z + vector.Z, W + vector.W);
+        }
+
+        public override Vector Subtract(Vector b)
+        {
+            var vector = CheckType(b);
+            return new Vector4D(X - b.X, Y - b.Y, Z - b.Z, W);
         }
 
         public override dynamic Apply(Matrix a)
@@ -78,7 +86,8 @@ namespace ConsoleGraphics.Core
             throw new ArgumentException();
         }
 
-        public float this[int row] => m[row, 0];
+        public float this[int row] => m[row, 0]; 
+        #endregion
 
         private Vector4D CheckType(Vector v)
         {

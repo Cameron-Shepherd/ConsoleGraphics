@@ -1,12 +1,13 @@
 ﻿namespace ConsoleGraphics.Core.Light
 {
-    public class SpotLight : Light
+    public class SpotLight : Light, IHaveLocation
     {
-        public Point3D Location { get; }
+        public Point4D Location { get; }
         public Vector Direction { get; }
         public float ConeAngle { get; }
 
-        public SpotLight(Point3D location, Vector direction, float coneAngle, float intensity) : base(intensity)
+        public SpotLight(Point4D location, Vector direction, float coneAngle, float intensity, Rgba colourRgba) : base(
+            intensity, colourRgba)
         {
             Location = location;
             Direction = direction;
@@ -15,7 +16,7 @@
 
         public static explicit operator PointLight(SpotLight sourceLight) // explicit byte to digit conversion operator
         {
-            return new PointLight(sourceLight.Location, sourceLight.Intensity);
+            return new PointLight(sourceLight.Location, sourceLight.Intensity, sourceLight.Rgba);
         }
     }
 }

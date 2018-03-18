@@ -11,7 +11,7 @@ namespace ConsoleGraphics.Core.Light
     {
         public Vector Direction { get; }
 
-        public DirectionLight(Vector direction, float intensity) : base(intensity)
+        public DirectionLight(Vector direction, float intensity, Rgba colourRgba) : base(intensity, colourRgba)
         {
             Direction = direction;
         }

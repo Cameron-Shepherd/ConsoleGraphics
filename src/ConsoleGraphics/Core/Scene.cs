@@ -35,7 +35,7 @@ namespace ConsoleGraphics.Core
             throw new NotImplementedException();
         }
 
-        public Triangle3D GetIntersectingTriangle(Ray ray)
+        public RayIntersection GetIntersection(Ray ray) // todo: Maybe move to scene raytracer extensions??
         {
             float minZ = float.MaxValue;
             foreach (var tri in Meshes.SelectMany(x => x.Faces))

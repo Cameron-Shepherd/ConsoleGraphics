@@ -9,13 +9,15 @@ namespace ConsoleGraphics.Render
 {
     public class Ray
     {
-        public Vector4D Direction { get; }
+        public Vector Direction { get; }
         public Point4D Start { get; }
+        public float Value { get; }
 
-        public Ray(Vector4D direction, Point4D start)
+        public Ray(Vector direction, Point4D start, float value)
         {
             Direction = direction;
             Start = start;
+            Value = value;
         }
     }
 }

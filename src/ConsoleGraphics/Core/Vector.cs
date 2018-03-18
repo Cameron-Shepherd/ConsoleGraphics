@@ -25,6 +25,12 @@ namespace ConsoleGraphics.Core
             return v1.Add(v2);
         }
 
+        public abstract Vector Subtract(Vector b);
+        public static Vector operator -(Vector v1, Vector v2)
+        {
+            return v1.Subtract(v2);
+        }
+
         public abstract Vector Negate();
         public static Vector operator -(Vector v1)
         {
@@ -59,5 +65,10 @@ namespace ConsoleGraphics.Core
         }
 
         public abstract dynamic Apply(Matrix a);
+
+        public Vector GetReflectionVector(Vector normal)
+        {
+            return normal - (2 * (normal.Dot(this))) * this;
+        }
     }
 }

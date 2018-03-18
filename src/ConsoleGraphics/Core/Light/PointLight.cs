@@ -1,10 +1,10 @@
 ﻿namespace ConsoleGraphics.Core.Light
 {
-    public class PointLight : Light
+    public class PointLight : Light, IHaveLocation
     {
-        public Point3D Location { get; }
+        public Point4D Location { get; }
 
-        public PointLight(Point3D location, float intensity) : base(intensity)
+        public PointLight(Point4D location, float intensity, Rgba colourRgba) : base(intensity, colourRgba)
         {
             Location = location;
         }

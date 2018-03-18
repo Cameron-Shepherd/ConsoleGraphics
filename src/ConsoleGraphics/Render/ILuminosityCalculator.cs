@@ -6,7 +6,7 @@ namespace ConsoleGraphics.Render
 {
     public interface ILuminosityCalculator
     {
-        byte Luminosity(Point3D location, Vector normal, Light sourceLight);
-        byte Luminosity(Point3D location, Vector normal, IEnumerable<Light> sourceLight);
+        Rgba Luminosity(Point4D location, Vector normal, Light sourceLight);
+        Rgba Luminosity(Point4D location, Vector normal, IEnumerable<Light> sourceLight);
     }
 }
